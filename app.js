@@ -116,7 +116,7 @@ async function buildTeam(){
               ])
               .then((data) => {
 
-                  const manager = new Manager(name, id, email, data.officeNo);
+                  const manager = new Manager(name, id, email, data.officenum);
 
                   teammate = fs.readFileSync("templates/manager.html");
 
